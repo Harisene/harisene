@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.haritha.fooddelivery.meal1">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/srilankanmeal"/>
+
+
+    <LinearLayout
+        android:id="@+id/innerlayer"
+        android:layout_width="350dp"
+        android:layout_height="480dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/transparent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/mealcategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+            android:text= "Meal Category"
+            android:textColor="@android:color/black"/>
+
+
+        <Spinner
+            android:id="@+id/daytype"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:layout_marginLeft="110dp"
+            android:textColor="@android:color/black"
+            tools:layout_editor_absoluteX="12dp"
+            tools:layout_editor_absoluteY="95dp" />
+
+        <TextView
+            android:id="@+id/mealtype_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text= "Meal Type"
+            android:textColor="@android:color/black"/>
+
+        <Spinner
+            android:id="@+id/mealtype"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:layout_marginLeft="110dp"
+            android:textColor="@android:color/black"
+            tools:layout_editor_absoluteX="12dp"
+            tools:layout_editor_absoluteY="95dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="Quantity"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="-20dp"
+            android:background="@android:color/white"
+            android:paddingStart="5dp"/>
+
+        <TextView
+            android:id="@+id/deliverydate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text= "Delivery Date"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/deliverydate"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-40dp"
+            android:layout_marginLeft="100dp"
+            android:ems="10"
+            android:hint="dd-mm-yyyy"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/deliverytime_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:text= "Delivery Time"
+            android:textColor="@android:color/black"/>
+
+        <EditText
+            android:id="@+id/deliverytime"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="-35dp"
+            android:inputType="time"
+            android:hint="hr(24).min"/>
+
+
+
+        <TextView
+            android:id="@+id/description_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Add Descrition"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="1dp"
+            android:hint="Enter Something..."
+            android:textSize="14sp"
+            android:inputType="textMultiLine"
+
+            />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/order"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:text="Order"
+            android:background="@android:color/holo_blue_bright"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="10dp"
+            />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

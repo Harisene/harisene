@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Food Delivery</string>
+
+    <string-array name="daytype">
+        <item> Breakfast </item>
+        <item> Lunch </item>
+        <item> Dinner </item>
+    </string-array>
+
+    <string-array name="mealtype">
+    <item> Chicken </item>
+    <item> Pork </item>
+    <item> Mutton </item>
+    <item> Beaf </item>
+    <item> Egg </item>
+    <item> Vegitable </item>
+    </string-array>
+
+</resources>
